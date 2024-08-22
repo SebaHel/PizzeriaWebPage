@@ -1,0 +1,207 @@
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/Images/pizza-Background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    overflow-y: hidden;
+    
+}
+nav{
+    position: sticky;
+    height: 13vh;
+    width: 100%;
+    background-color: transparent;
+    transition: 0.3s ease;
+
+}
+.nav_header {
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr 1fr 1fr 1fr;
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 13vh;
+    background-color: transparent;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    text-shadow: 1px 1px 4px #000;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+nav.hidden{
+    background-color: white;
+    height: 8vh;
+}
+.nav_header.hidden{
+    color: black;
+    text-shadow: 1px 1px 4px #2c2c2c;
+    height: 6vh;
+    
+}
+.nav_header.hidden .links a,.nav_header.hidden .reservation{
+    color: black;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    bottom: 8px;
+}
+.nav_header.hidden .Logo{
+    margin-top: 10px;
+}
+
+.Logo{
+    text-align: left;
+    font-size: 24px;
+}
+.reservation{
+    background-color: orange;
+    font-size: 25px;
+    padding: 10px 30px 10px 30px;
+    border-radius: 30px;
+}
+.MainPart{
+    position: absolute;
+    text-shadow: 1px 1px 4px #000;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.MainPage, .SecondDiv{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    color: white;
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 100vh;
+    text-align: left;
+    scroll-snap-align: start;
+}
+.MainPage div {
+    padding-top: 20%;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+.MainPage div .reservation{
+    width: max-content;
+    float: right;
+    align-items: center;
+    justify-content: center;
+}
+.active {
+    background-color: rgb(58, 57, 57);
+    transition: 0.2s;
+}
+.reservation a {
+    color: white;
+    text-decoration: none;
+}
+.links a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+.links a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 5px;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(to right, rgb(36, 175, 36), rgb(54, 3, 3));
+    visibility: hidden;
+    transition: all 300ms ease-in-out;
+}
+
+.hovered a::before {
+    visibility: visible;
+    width: 100%;
+}
+
+.SecondPage, .ThirdPage{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/Images/SecondPart.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+
+}
+.SecondPage .MainPage, .ThirdPage .MainPage{
+    align-items: center;
+    padding-top: 0;
+    height: 100vh;
+}
+.ThirdPage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/Images/ThirdPart.jpg');
+    scroll-snap-align: none;
+}
+.MainPart.FooterMain{
+    scroll-snap-type:none;
+}
+.footerMain{
+    padding-left: 20%;
+    padding-right: 20%;
+    height: 30vh;
+    background-color: grey;
+    color: rgba(255, 255, 255, 0.945);
+    scroll-snap-type:y mandatory;
+    scroll-snap-align: start;
+}
+.footerContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr;
+    align-items: center;
+    text-align: left;
+
+}
+.social-icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+.fa {
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    padding: 10;
+  }
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook{
+    background: #3B5998;
+    
+  }
+.fa-twitter{
+    background: #55ACEE;
+  }
+.fa-instagram{
+    background: #125688;
+}
+.footer-section{
+    padding-left: 50px;
+}
+.footer-section ul{
+    list-style-type: none;
+    padding: 0;
+    
+}
