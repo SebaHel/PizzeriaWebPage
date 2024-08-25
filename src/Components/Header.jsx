@@ -29,7 +29,7 @@ function Header(){
     return(
        <nav className={` ${isHidden ? 'hidden' : ''}`}>
            <div className={`nav_header ${isHidden ? 'hidden' : ''}`}>
-               <p className="Logo"><span className="material-symbols-outlined">local_pizza</span>Good pizza</p>
+               <a href="/"><p className="Logo"><span className="material-symbols-outlined">local_pizza</span>Good pizza</p></a>
                <HoverButton text={"About Us"} href={"/About"} reservation={"links"} styleclass={"hovered"}/>
                <HoverButton text={"Menu"} href={"/Menu"} reservation={"links"} styleclass={"hovered"}/>
                <HoverButton text={"Contact"} href={"/Contact"} reservation={"links"} styleclass={"hovered"}/>

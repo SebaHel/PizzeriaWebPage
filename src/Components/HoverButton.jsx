@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link } from "react-router-dom";
 
 function HoverButton({text, href, styleclass, reservation}){
 
@@ -14,7 +15,7 @@ function HoverButton({text, href, styleclass, reservation}){
       onMouseOver={HandleMouseOver}
       onMouseOut={HandleMouseOut}
     >
-      <a href={href}>{text}</a>
+      <Link to={href}>{text}</Link>
     </p>
     );
     

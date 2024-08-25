@@ -57,6 +57,10 @@ nav.hidden{
 .nav_header.hidden .Logo{
     margin-top: 10px;
 }
+.nav_header a{
+    text-decoration: none;
+    color: white;
+}
 
 .Logo{
     text-align: left;
@@ -204,4 +208,37 @@ nav.hidden{
     list-style-type: none;
     padding: 0;
     
+}
+.About{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/Images/pizza-Background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -400px;
+    background-size: 200vh 100vh;
+    height: 100vh;
+    margin: 0;
+    scroll-snap-type: none;
+    scroll-behavior: smooth;
+}
+#about{
+    height: 30vh;
+    display: flex;
+    font-size: 50px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.aboutContainer{
+    background-color: white;
+    height: 50vh;
+    color: black;
+}
+.aboutText{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr;
 }

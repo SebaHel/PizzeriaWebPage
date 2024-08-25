@@ -1,13 +1,15 @@
-import { useState } from 'react'
 import MainPage from './MainPage.jsx'
-import Header from './Header.jsx'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import About from './About.jsx';
 function App() {
 
   return (
-    <div>
-      <Header />
-      <MainPage />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MainPage/>} />
+        <Route path="/About" element={<About/>} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
