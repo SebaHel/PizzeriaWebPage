@@ -33,7 +33,6 @@ function Header(){
                <HoverButton text={"About Us"} href={"/About"} reservation={"links"} styleclass={"hovered"}/>
                <HoverButton text={"Menu"} href={"/Menu"} reservation={"links"} styleclass={"hovered"}/>
                <HoverButton text={"Contact"} href={"/Contact"} reservation={"links"} styleclass={"hovered"}/>
-               <HoverButton text={"Log In"} href={"/Log_in"} reservation={"links"} styleclass={"hovered"}/>
                <HoverButton text={"Reservation"} href={"/Reservation"} reservation={"reservation"} styleclass={"active"}/>
            </div>
        </nav>

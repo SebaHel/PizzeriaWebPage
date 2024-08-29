@@ -217,8 +217,15 @@ nav.hidden{
     background-size: 200vh 100vh;
     height: 100vh;
     margin: 0;
+    overflow-y: scroll;
     scroll-snap-type: none;
     scroll-behavior: smooth;
+}
+.About .nav_header{
+    background-color: transparent;
+}
+.About .nav_header.hidden{
+    position: fixed;
 }
 #about{
     height: 30vh;
@@ -230,15 +237,53 @@ nav.hidden{
 }
 .aboutContainer{
     background-color: white;
-    height: 50vh;
     color: black;
 }
 .aboutText{
     width: 60%;
     margin-left: 20%;
     margin-right: 20%;
+    height: 40vh;
     padding: 2%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 2fr;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
 }
+.aboutText div{
+    width: 33%;
+    padding: 15px;
+    text-align: left;
+    font-style: italic;
+    font-size: 20px;
+    
+}
+.aboutText div span{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.ImgButtons{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.ImgButtons #reservationButton, .ImgButtons #MenuButton{
+    display: flex;
+    width: 100%;
+    height: 30vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/Images/SecondPart.jpg');
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+.ImgButtons #MenuButton{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/Images/ThirdPart.jpg');
+    background-size: cover;
+}
+.ImgButtons .reservation{
+    font-size: 40px;
+}
+
