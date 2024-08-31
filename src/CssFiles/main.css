@@ -209,7 +209,7 @@ nav.hidden{
     padding: 0;
     
 }
-.About{
+.About , .Menu{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/Images/pizza-Background.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -221,6 +221,7 @@ nav.hidden{
     scroll-snap-type: none;
     scroll-behavior: smooth;
 }
+
 .About .nav_header{
     background-color: transparent;
 }
@@ -285,5 +286,39 @@ nav.hidden{
 }
 .ImgButtons .reservation{
     font-size: 40px;
+}
+.Menu{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/Images/ThirdPart.jpg');
+}
+.MainMenu{
+    background-color: white;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.MenuP{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    border-bottom: 1px dashed black;
+    
+}
+#MenuName{
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 25px;
+    margin-bottom: 0px;
+}
+#MenuPrice{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    margin-bottom: 0px;
+}
+#MenuIngredients{
+    font-size: 20px;
+    margin-bottom: 45px;
 }
 

@@ -1,8 +1,7 @@
 import Header from "./Header"
 import Footer from "./Footer"
 import AboutText from "./AboutPage/AboutText"
-import HoverButton from "./HoverButton"
-
+import ImageButtons from "./AboutPage/ImageButtons"
 
 function About(){
 
@@ -15,14 +14,7 @@ function About(){
             </div>
             <div className="aboutContainer">
                 <AboutText />
-                <div className="ImgButtons">
-                    <div id="reservationButton">
-                        <HoverButton text={"Reservation"} href={"/Reservation"} reservation={"reservation"} styleclass={"active"}/>
-                    </div>
-                    <div id="MenuButton">
-                        <HoverButton text={"Menu"} href={"/Menu"} reservation={"reservation"} styleclass={"active"}/>
-                    </div>
-                </div>
+                <ImageButtons />
             </div>
             <Footer />
         </div>
