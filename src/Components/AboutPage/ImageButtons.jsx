@@ -1,11 +1,12 @@
 import HoverButton from "../HoverButton"
+import Reservation from "../Reservation"
 
 
 function ImageButtons(){
     return (
         <div className="ImgButtons">
             <div id="reservationButton">
-                <HoverButton text={"Reservation"} href={"/Reservation"} reservation={"reservation"} styleclass={"active"}/>
+                <Reservation />
             </div>
             <div id="MenuButton">
                 <HoverButton text={"Menu"} href={"/Menu"} reservation={"reservation"} styleclass={"active"}/>

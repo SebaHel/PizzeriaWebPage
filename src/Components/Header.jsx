@@ -1,5 +1,6 @@
 import HoverButton from "./HoverButton";
 import React, { useEffect, useState } from 'react';
+import Reservation from "./Reservation";
 
 function Header(){
     const [scrollPosition, setScrollPosition] = useState(0);
@@ -33,7 +34,7 @@ function Header(){
                <HoverButton text={"About Us"} href={"/About"} reservation={"links"} styleclass={"hovered"}/>
                <HoverButton text={"Menu"} href={"/Menu"} reservation={"links"} styleclass={"hovered"}/>
                <HoverButton text={"Contact"} href={"/Contact"} reservation={"links"} styleclass={"hovered"}/>
-               <HoverButton text={"Reservation"} href={"/Reservation"} reservation={"reservation"} styleclass={"active"}/>
+               <Reservation />
            </div>
        </nav>
     )

@@ -321,4 +321,73 @@ nav.hidden{
     font-size: 20px;
     margin-bottom: 45px;
 }
+.resrvationDiv{
+    visibility: hidden;
+}
+.resrvationDiv.Active{
+    visibility:visible;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: black;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vw;
+    z-index: 9999;
+}
+.ResContainer{
+    margin: 10vh;
+    padding-top: 30px;
+    left: 29%;
+    position: fixed;
+    width: 30%;
+    height: 47vh;
+    border: 0;
+    background-color: rgb(235, 235, 235);
+    border-radius: 15px;
+}
+.ResContainer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ResContainer #submit {
+    display: flex;
+    margin-left: 45px;
+    font-size: 25px;
+    width: 120px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(185, 91, 53);
+    border: 0;
+    color: white;
+    border-radius: 25px ;
+
+}
+#close{
+    position: fixed;
+    right:0;
+    top: 0;
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+#ReservInput, #ReservTextarea{
+    width: 80%;
+    height: 20px;
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 25px;
+    background-color: lightgray;
+    border: 0px;
+    border-radius: 25px;
+    color: #2c2c2cd0;
+}
+#ReservTextarea{
+    height: 120px;
+}
+
+
+
 
