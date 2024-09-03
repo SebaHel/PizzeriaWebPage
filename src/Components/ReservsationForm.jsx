@@ -26,7 +26,7 @@ function ReservationForm() {
   return (
     <form onSubmit={handleSubmit}>
       <div>
-      <span class="material-symbols-outlined">person</span>
+      <span className="material-symbols-outlined">person</span>
         <input
           type="text"
           id="ReservInput"
@@ -39,7 +39,7 @@ function ReservationForm() {
       </div>
 
       <div >
-      <span class="material-symbols-outlined">call</span>
+      <span className="material-symbols-outlined">call</span>
         <input
           type="tel"
           id="ReservInput"
@@ -52,7 +52,7 @@ function ReservationForm() {
       </div>
 
       <div>
-      <span class="material-symbols-outlined">calendar_month</span>
+      <span className="material-symbols-outlined">calendar_month</span>
         <input
           type="date"
           id="ReservInput"
@@ -64,7 +64,7 @@ function ReservationForm() {
       </div>
 
       <div>
-      <span class="material-symbols-outlined">edit</span>
+      <span className="material-symbols-outlined">edit</span>
         <textarea
           id="ReservTextarea"
           name="message"

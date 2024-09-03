@@ -73,7 +73,6 @@ nav.hidden{
     border-radius: 30px;
 }
 .MainPart{
-    position: absolute;
     text-shadow: 1px 1px 4px #000;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
@@ -89,6 +88,7 @@ nav.hidden{
     height: 100vh;
     text-align: left;
     scroll-snap-align: start;
+    z-index: 1;
 }
 .MainPage div {
     padding-top: 20%;
@@ -209,7 +209,7 @@ nav.hidden{
     padding: 0;
     
 }
-.About , .Menu{
+.About , .Menu, .Contact{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/Images/pizza-Background.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -333,7 +333,7 @@ nav.hidden{
     left: 0;
     width: 100vw;
     height: 100vw;
-    z-index: 9999;
+    z-index: 99999;
 }
 .ResContainer{
     margin: 10vh;
@@ -350,8 +350,9 @@ nav.hidden{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 25px;
 }
-.ResContainer #submit {
+.ResContainer #submit,  .ContactGrid #submit{
     display: flex;
     margin-left: 45px;
     font-size: 25px;
@@ -378,7 +379,6 @@ nav.hidden{
     height: 20px;
     font-size: 18px;
     padding: 10px;
-    margin-bottom: 25px;
     background-color: lightgray;
     border: 0px;
     border-radius: 25px;
@@ -386,6 +386,31 @@ nav.hidden{
 }
 #ReservTextarea{
     height: 120px;
+}
+.Contact{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/Images/SecondPart.jpg');
+}
+.ContactPage{
+    background-color: white;
+    height: 80vh;
+    width: 100%;
+}
+.ContactGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 70vh;
+}
+.ContactGrid .footer-section{
+    font-size: 30px;
+}
+.ContactGrid .footer-section ul, .ContactGrid form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 10%;
 }
 
 
